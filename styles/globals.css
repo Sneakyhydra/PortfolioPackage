@@ -13,6 +13,9 @@ body {
 	font-size: 62.5%;
 	background-color: #fff;
 	color: #333;
+}
+
+.custom-container {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 }
