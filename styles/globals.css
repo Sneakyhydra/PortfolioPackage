@@ -11,20 +11,8 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 62.5%;
-	line-height: 62.5%;
 	background-color: #fff;
 	color: #333;
-}
-
-a {
-	color: var(--primary-color);
-	text-decoration: none;
-}
-
-button {
-	cursor: pointer;
-}
-
-.center {
-	text-align: center;
+	width: 100%;
+	height: 100%;
 }
