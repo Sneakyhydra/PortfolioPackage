@@ -1,0 +1,24 @@
+{
+	"theme_color": "#000000",
+	"background_color": "#000000",
+	"display": "standalone",
+	"scope": "https://portfolio-sneakyhydra.vercel.app/",
+	"start_url": "https://portfolio-sneakyhydra.vercel.app/",
+	"name": "Dhruv Rishishwar",
+	"short_name": "DR",
+	"description": "Dhruv Rishishwar's portfolio",
+	"icons": [
+		{
+			"src": "/icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	]
+}
