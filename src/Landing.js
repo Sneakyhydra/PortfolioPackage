@@ -1,5 +1,7 @@
-const Landing = () => {
-	return <div className='custom-container bg-black text-white'>Landing</div>;
+import styles from '../styles/Landing.module.css';
+
+const Landing = ({ theme }) => {
+	return <div className={styles.container + ' ' + theme}>Landing</div>;
 };
 
 export default Landing;

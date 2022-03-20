@@ -1,5 +1,7 @@
-const Experience = () => {
-	return <div className='custom-container bg-black text-white'>Experience</div>;
+import styles from '../styles/Experience.module.css';
+
+const Experience = ({ theme }) => {
+	return <div className={styles.container + ' ' + theme}>Experience</div>;
 };
 
 export default Experience;

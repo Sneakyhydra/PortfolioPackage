@@ -1,5 +1,7 @@
-const About = () => {
-	return <div className='custom-container bg-black text-white'>About</div>;
+import styles from '../styles/About.module.css';
+
+const About = ({ theme }) => {
+	return <div className={styles.container + ' ' + theme}>About</div>;
 };
 
 export default About;

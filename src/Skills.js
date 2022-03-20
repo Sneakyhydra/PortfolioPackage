@@ -1,5 +1,7 @@
-const Skills = () => {
-	return <div className='custom-container bg-black text-white'>Skills</div>;
+import styles from '../styles/Skills.module.css';
+
+const Skills = ({ theme }) => {
+	return <div className={styles.container + ' ' + theme}>Skills</div>;
 };
 
 export default Skills;
