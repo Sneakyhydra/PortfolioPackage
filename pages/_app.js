@@ -1,4 +1,7 @@
+// Head
 import Head from 'next/head';
+
+// Css
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }) => {

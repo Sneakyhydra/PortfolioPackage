@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+// Hooks
+import { useState, useEffect, Fragment } from 'react';
 
 // Components
 import Navbar from '../src/Navbar';
@@ -40,14 +41,14 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div>
+		<Fragment>
 			<Navbar theme={theme} setTheme={setTheme} />
 			<Landing theme={theme} />
 			<Experience theme={theme} />
 			<Projects theme={theme} />
 			<Skills theme={theme} />
 			<About theme={theme} />
-		</div>
+		</Fragment>
 	);
 };
 
