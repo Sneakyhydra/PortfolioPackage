@@ -7,11 +7,11 @@
 }
 
 ::-webkit-scrollbar-track {
-	background-color: white;
+	background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: white;
+	background-color: transparent;
 	background-clip: content-box;
 }
 

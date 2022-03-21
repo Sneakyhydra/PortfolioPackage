@@ -1,0 +1,14 @@
+.navbar {
+	border: none;
+	border-width: 0;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	background-color: transparent;
+}
+
+.icon {
+	margin-right: 0.75rem;
+	margin-top: 0.4rem;
+}
