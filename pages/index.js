@@ -2,12 +2,12 @@
 import { useState, useEffect, Fragment } from 'react';
 
 // Components
-import Navbar from '../src/Navbar';
-import Landing from '../src/Landing';
-import Experience from '../src/Experience';
-import Projects from '../src/Projects';
-import Skills from '../src/Skills';
-import About from '../src/About';
+import Navbar from '../components/Navbar';
+import Landing from '../components/Landing';
+import Experience from '../components/Experience';
+import Projects from '../components/Projects';
+import Skills from '../components/Skills';
+import About from '../components/About';
 
 const Home = () => {
 	// Theme
