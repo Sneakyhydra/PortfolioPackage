@@ -36,7 +36,9 @@ const Icon = ({ alt, icon, link }) => {
 			style={{
 				backgroundColor: professionalDetails.backgroundColor,
 				padding: '1rem',
-				marginLeft: '0.25rem',
+				marginLeft: '0.2rem',
+				width: '4.5rem',
+				borderRadius: '0.25rem',
 			}}
 		>
 			{professionalDetails.icon}

@@ -7,7 +7,8 @@ import Landing from '../components/Landing';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
-import About from '../components/About';
+import Description from '../components/Description';
+import Contact from '../components/Contact';
 
 const Home = () => {
 	// Theme
@@ -44,10 +45,11 @@ const Home = () => {
 		<Fragment>
 			<Navbar theme={theme} setTheme={setTheme} />
 			<Landing theme={theme} />
-			<Experience theme={theme} />
-			<Projects theme={theme} />
+			<Description theme={theme} />
 			<Skills theme={theme} />
-			<About theme={theme} />
+			<Projects theme={theme} />
+			<Experience theme={theme} />
+			<Contact theme={theme} />
 		</Fragment>
 	);
 };
