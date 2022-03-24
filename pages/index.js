@@ -9,10 +9,13 @@ import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Description from '../components/Description';
 import Contact from '../components/Contact';
+import Preloader from '../components/Preloader';
 
 const Home = () => {
 	// Theme
 	const [theme, setTheme] = useState('theme-light');
+	// Loading
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		// Set Theme on load
@@ -33,6 +36,14 @@ const Home = () => {
 				setTheme(newColorScheme);
 			});
 
+		// Check if page is loaded
+		const checkLoading = setInterval(() => {
+			if (document.readyState === 'complete') {
+				setLoading(false);
+				clearInterval(checkLoading);
+			}
+		}, 100);
+
 		// Return function to remove event listener
 		return () => {
 			window
@@ -40,6 +51,10 @@ const Home = () => {
 				.removeEventListener('change', (event) => {});
 		};
 	}, []);
+
+	if (loading) {
+		return <Preloader />;
+	}
 
 	return (
 		<Fragment>
