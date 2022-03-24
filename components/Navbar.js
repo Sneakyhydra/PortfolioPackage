@@ -1,3 +1,7 @@
+// Icons
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+
 // Css
 import styles from '../styles/Navbar.module.css';
 
@@ -17,9 +21,13 @@ const Navbar = ({ theme, setTheme }) => {
 	// Icon to display depending on theme
 	let icon =
 		theme === 'theme-light' ? (
-			<button onClick={changeTheme} className={styles.icon}></button>
+			<button onClick={changeTheme} className={styles.icon}>
+				<DarkModeIcon fontSize='large' />
+			</button>
 		) : (
-			<button onClick={changeTheme} className={styles.icon}></button>
+			<button onClick={changeTheme} className={styles.icon}>
+				<LightModeIcon fontSize='large' />
+			</button>
 		);
 
 	return (
