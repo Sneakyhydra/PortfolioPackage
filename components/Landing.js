@@ -2,7 +2,7 @@
 // import ReactTyped from 'react-typed';
 
 // Components
-import Icon from './Icon';
+// import Icon from './Icon';
 
 // Css
 import styles from '../styles/Landing.module.css';
@@ -50,11 +50,11 @@ const Landing = ({ theme }) => {
 			<h2 className='text-xl p-1'>
 				{/* <ReactTyped strings={subtitles} typeSpeed={40} backSpeed={50} loop /> */}
 			</h2>
-			<div className='flex flex-row gap-2 h-16'>
+			{/* <div className='flex flex-row gap-2 h-16'>
 				{professionalDetails.map(({ alt, icon, link }, idx) => (
 					<Icon key={idx} alt={alt} icon={icon} link={link} />
 				))}
-			</div>
+			</div> */}
 		</div>
 	);
 };
