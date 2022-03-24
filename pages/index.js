@@ -15,7 +15,7 @@ const Home = () => {
 	// Theme
 	const [theme, setTheme] = useState('theme-light');
 	// Loading
-	const [loading, setLoading] = useState(true);
+	// const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		// Set Theme on load
@@ -37,12 +37,12 @@ const Home = () => {
 			});
 
 		// Check if page is loaded
-		const checkLoading = setInterval(() => {
-			if (document.readyState === 'complete') {
-				setLoading(false);
-				clearInterval(checkLoading);
-			}
-		}, 100);
+		// const checkLoading = setInterval(() => {
+		// 	if (document.readyState === 'complete') {
+		// 		setLoading(false);
+		// 		clearInterval(checkLoading);
+		// 	}
+		// }, 100);
 
 		// Return function to remove event listener
 		return () => {
@@ -52,9 +52,9 @@ const Home = () => {
 		};
 	}, []);
 
-	if (loading) {
-		return <Preloader />;
-	}
+	// if (loading) {
+	// 	return <Preloader />;
+	// }
 
 	return (
 		<Fragment>
